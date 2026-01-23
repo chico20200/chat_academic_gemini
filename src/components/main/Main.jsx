@@ -19,17 +19,17 @@ const Main = () => {
 	return (
 		<div className="main">
 			<div className="nav">
-				<p>Gemini</p>
-				<img src={assets.user} alt="" />
+				<p>Academico IA EPN</p>
+				<img src={assets.epn} alt="" />
 			</div>
 			<div className="main-container">
 				{!showResults ? (
 					<>
 						<div className="greet">
 							<p>
-								<span>Hello , Dev </span>
+								<span>Hola Estudiante,</span>
 							</p>
-							<p>How Can i Help You Today?</p>
+							<p>Que quieres consultar el día de hoy</p>
 						</div>
 						<div className="cards">
 							<div
@@ -77,11 +77,11 @@ const Main = () => {
 				) : (
 					<div className="result">
 						<div className="result-title">
-							<img src={assets.user} alt="" />
+							<img src={assets.epn} alt="" />
 							<p>{recentPrompt}</p>
 						</div>
 						<div className="result-data">
-							<img src={assets.gemini_icon} alt="" />
+							<img src={assets.buho_epn} alt="" />
 							{loading ? (
 								<div className="loader">
 									<hr />
@@ -103,7 +103,7 @@ const Main = () => {
 							}}
 							value={input}
 							type="text"
-							placeholder="Enter the Prompt Here"
+							placeholder="Ingresa tu consulta aqui..."
 						/>
 						<div>
 							<img src={assets.gallery_icon} alt="" />
