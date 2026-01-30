@@ -110,8 +110,7 @@ const Main = () => {
 							placeholder="Ingresa tu consulta aqui..."
 						/>
 						<div>
-							<img src={assets.gallery_icon} alt="" />
-							<img src={assets.mic_icon} alt="" />
+							
 							<img
 								src={assets.send_icon}
 								alt=""
