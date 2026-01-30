@@ -31,48 +31,52 @@ const Main = () => {
 							</p>
 							<p>Que quieres consultar el día de hoy</p>
 						</div>
-						<div className="cards">
-							<div
-								className="card"
-								onClick={() =>
-									handleCardClick("Suggest Some Place To Visit In India.")
-								}
-							>
-								<p>Suggest Some Place To Visit In India.</p>
-								<img src={assets.compass_icon} alt="" />
-							</div>
-							<div
-								className="card"
-								onClick={() =>
-									handleCardClick(
-										"Explain the process of photosynthesis in simple terms"
-									)
-								}
-							>
-								<p>Explain the process of photosynthesis in simple terms </p>
-								<img src={assets.message_icon} alt="" />
-							</div>
-							<div
-								className="card"
-								onClick={() =>
-									handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")
-								}
-							>
-								<p>How do you create a responsive navbar using CSS and JavaScript?</p>
-								<img src={assets.bulb_icon} alt="" />
-							</div>
-							<div
-								className="card"
-								onClick={() => {
-									handleCardClick(
-										"What are some essential skills for becoming a front-end developer?"
-									);
-								}}
-							>
-								<p>What are some essential skills for becoming a front-end developer?</p>
-								<img src={assets.code_icon} alt="" />
-							</div>
-						</div>
+
+                        <div className="cards">
+                            <div
+                                className="card"
+                                onClick={() =>
+                                    handleCardClick("¡Auxilio! Se cayó el SAEw y necesito matricularme. ¿Qué hago?")
+                                }
+                            >
+                                <p>¡Se cayó el SAEw y necesito matricularme! </p>
+                                <img src={assets.code_icon} alt="Icono SAEw" />
+                            </div>
+                            
+                            <div
+                                className="card"
+                                onClick={() =>
+                                    handleCardClick(
+                                        "Dame consejos para sobrevivir a los exámenes en el Edificio de Básicas."
+                                    )
+                                }
+                            >
+                                <p>Tips para sobrevivir a los exámenes en Básicas 🏢</p>
+                                <img src={assets.bulb_icon} alt="Icono Ideas" />
+                            </div>
+                            
+                            <div
+                                className="card"
+                                onClick={() =>
+                                    handleCardClick("¿Cómo estructuro mi plan de tesis según el formato de la EPN?")
+                                }
+                            >
+                                <p>¿Cómo estructuro mi plan de tesis en la Poli? 🎓</p>
+                                <img src={assets.compass_icon} alt="Icono Guía" />
+                            </div>
+                            
+                            <div
+                                className="card"
+                                onClick={() => {
+                                    handleCardClick(
+                                        "Explícame un tema difícil de Ingeniería como si fuera para un novato."
+                                    );
+                                }}
+                            >
+                                <p>Explícame un tema difícil de Ingeniería fácilmente 🧠</p>
+                                <img src={assets.message_icon} alt="Icono Chat" />
+                            </div>
+                        </div>
 					</>
 				) : (
 					<div className="result">
