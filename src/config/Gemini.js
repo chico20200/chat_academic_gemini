@@ -5,7 +5,7 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-2.5-flash";
-const API_KEY = "AIzaSyAy5dQjikv8iRzIwNZzqlfX-k8TcwowyFI";
+const API_KEY = "AIzaSyBszuxBSAVury7lbr5ZgK_JeSkUw7mbJi0";
 
 async function runChat(userMessage) {
   const genAI = new GoogleGenerativeAI(API_KEY);
